@@ -33,8 +33,8 @@ tentamen.add(
   1
 );
 tentamen.add(
-  'less than Number',
-  num1.cmp(200),
+  'less than String',
+  num1.cmp('200'),
   -1
 );
 tentamen.add(
@@ -57,6 +57,11 @@ tentamen.add(
   num1.div(10),
   new Num(2)
 );
+tentamen.add(
+  'by String',
+  num1.div('20'),
+  new Num(1)
+);
 
 /**
  * eq
@@ -70,6 +75,11 @@ tentamen.add(
 tentamen.add(
   'to Number',
   num1.eq(20),
+  true
+);
+tentamen.add(
+  'to String',
+  num1.eq('20'),
   true
 );
 
@@ -87,6 +97,11 @@ tentamen.add(
   num1.gt(4),
   true
 );
+tentamen.add(
+  'String',
+  num1.gt('4'),
+  true
+);
 
 /**
  * gte
@@ -100,6 +115,11 @@ tentamen.add(
 tentamen.add(
   'Number',
   num1.gte(4),
+  true
+);
+tentamen.add(
+  'String',
+  num1.gte('4'),
   true
 );
 
@@ -117,6 +137,11 @@ tentamen.add(
   num2.lt(20),
   true
 );
+tentamen.add(
+  'String',
+  num2.lt('20'),
+  true
+);
 
 /**
  * lte
@@ -130,6 +155,11 @@ tentamen.add(
 tentamen.add(
   'Number',
   num2.lte(20),
+  true
+);
+tentamen.add(
+  'String',
+  num2.lte('20'),
   true
 );
 
@@ -147,6 +177,11 @@ tentamen.add(
   num1.minus(4),
   new Num(16)
 );
+tentamen.add(
+  'String',
+  num1.minus('4'),
+  new Num(16)
+);
 
 /**
  * mod
@@ -160,6 +195,11 @@ tentamen.add(
 tentamen.add(
   'Number',
   num1.mod(4),
+  new Num(0)
+);
+tentamen.add(
+  'String',
+  num1.mod('4'),
   new Num(0)
 );
 
@@ -185,6 +225,11 @@ tentamen.add(
 tentamen.add(
   'Number',
   num1.plus(4),
+  new Num(24)
+);
+tentamen.add(
+  'String',
+  num1.plus('4'),
   new Num(24)
 );
 
@@ -223,8 +268,18 @@ tentamen.add(
  */
 tentamen.suite('times');
 tentamen.add(
-  'test',
+  'Num',
   num1.times(num2),
+  new Num(80)
+);
+tentamen.add(
+  'Number',
+  num1.times(4),
+  new Num(80)
+);
+tentamen.add(
+  'String',
+  num1.times('4'),
   new Num(80)
 );
 
