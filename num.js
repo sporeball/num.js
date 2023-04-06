@@ -14,7 +14,7 @@ export default class Num {
   }
 
   cmp (n) {
-    let value = this.valueOf();
+    const value = this.valueOf();
     if (value > n.valueOf()) {
       return 1;
     }
@@ -95,7 +95,7 @@ export default class Num {
   times (n) {
     return new Num(this.valueOf() * n.valueOf());
   }
-  
+
   toExponential (fractionDigits) {
     if (fractionDigits === undefined) {
       return this.valueOf().toExponential();
