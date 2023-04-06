@@ -1,6 +1,6 @@
 # num.js
 
-<a href="https://www.npmjs.com/package/num.js"><img src="https://img.shields.io/npm/v/num.js" /></a>
+<a href="https://www.npmjs.com/package/@sporeball/num.js"><img src="https://img.shields.io/npm/v/@sporeball/num.js" /></a>
 
 > library to provide a wrapper for JavaScript's Number primitive
 
@@ -23,7 +23,7 @@ x                // Num { value: 20 }
 
 ## install
 ```
-$ npm install num.js
+$ npm install @sporeball/num.js
 ```
 
 ## API

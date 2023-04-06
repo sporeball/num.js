@@ -1,5 +1,5 @@
 {
-  "name": "num.js",
+  "name": "@sporeball/num.js",
   "version": "0.0.0",
   "description": "library to provide a wrapper for JavaScript's Number primitive",
   "type": "module",
