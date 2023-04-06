@@ -1,7 +1,7 @@
 {
   "name": "num.js",
   "version": "0.0.0",
-  "description": "",
+  "description": "library to provide a wrapper for JavaScript's Number primitive",
   "type": "module",
   "exports": "./num.js",
   "scripts": {
@@ -11,6 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/sporeball/num.js.git"
   },
+  "keywords": [
+    "number",
+    "primitive",
+    "wrapper",
+    "shim",
+    "library",
+    "big",
+    "big.js"
+  ],
   "author": "sporeball",
   "license": "MIT",
   "bugs": {
