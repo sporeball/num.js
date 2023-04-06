@@ -6,7 +6,18 @@
 
 export default class Num {
   constructor (value) {
-    this.value = value;
+    const name = value.constructor.name;
+    if (name === 'Number' || name === 'Num') {
+      this.value = value.valueOf();
+    } else if (name === 'String') {
+      const castedValue = Number(value.valueOf());
+      if (Number.isNaN(castedValue)) {
+        throw new Error('invalid value');
+      }
+      this.value = castedValue;
+    } else {
+      throw new Error('invalid value');
+    }
   }
 
   abs () {
